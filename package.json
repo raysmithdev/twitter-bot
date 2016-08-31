@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/raysmithdev/twitter-bot#readme",
   "dependencies": {
-    "twitter": "^1.4.0"
+    "twit": "^2.1.1"
   }
 }
