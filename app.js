@@ -9,22 +9,6 @@ var Bot = new Twit({
 	access_token_secret: secret.access_token_secret
 });
 
-
-function StartBot() {
-	Bot.post('statuses/retweet/:id', { id: '669520341815836672' }, BotInitiated);
-
-	function BotInitiated (error, data, response) {
-		if (error) {
-			console.log('Bot could not be initiated, : ' + error);
-		}
-		else {
-  			console.log('Bot initiated : 669520341815836672');
-		}
-	}
-
-	Retweet();
-}
-
 function Retweet() {
 
 	var query = {
@@ -57,4 +41,4 @@ function Retweet() {
 	}
 }
 
-StartBot();
+Retweet();
